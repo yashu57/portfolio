@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>AI Recipe Generator 🥘</h1>
+
+      <section>
+        <form id="recipe-form">
+          <input
+            type="text"
+            name="enter-recipe-topic"
+            placeholder="Enter a recipe subject"
+            autofocus
+            required
+            class="instructions"
+            id="user-instructions"
+          />
+          <input type="submit" value="Submit" class="submit-button" />
+        </form>
+        <div class="hints">
+          i.e. western cuisine, french pastries, japanese desserts
+        </div>
+      </section>
+
+      <section>
+        <div class="recipe hidden" id="recipe"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
